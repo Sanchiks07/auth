@@ -8,6 +8,11 @@
 <body>
     @auth
         <p>Sveiks, {{ Auth::user()->first_name}}</p>
+
+        <form method="">
+            
+            <button type="submit">Logout</button>
+        </form>
     @endauth
 
     @guest
