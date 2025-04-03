@@ -9,14 +9,19 @@
     @auth
         <p>Sveiks, {{ Auth::user()->first_name}}</p>
 
-        <form method="">
-            
+        <form method="POST" action="/logout">
+            @csrf
+            @method("delete")
+
             <button type="submit">Logout</button>
         </form>
     @endauth
 
     @guest
         <p>Sveiks, viesi!</p>
+
+        <a href="/register">Register</a><br>
+        <a href="/login">Login</a>
     @endguest
 </body>
 </html>

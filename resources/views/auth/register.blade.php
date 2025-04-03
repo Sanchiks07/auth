@@ -21,17 +21,17 @@
           
         <label>
             First Name<br>
-            <input name="first_name" required/>
+            <input name="first_name" value="{{ old('first_name') }}" required/>
         </label><br><br>
 
         <label>
             Last Name<br>
-            <input name="last_name" required/>
+            <input name="last_name" value="{{ old('last_name') }}" required/>
         </label><br><br>
 
         <label>
             Email<br>
-            <input name="email" type="email" required/>
+            <input name="email" type="email" value="{{ old('email') }}" required/>
         </label><br><br>
 
         <label>
