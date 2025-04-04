@@ -8,8 +8,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/suprise', function () {
-    return view('auth/suprise');
+Route::get('/secret', function () {
+    return view('auth/secret');
 })->middleware("auth");
 
 // RegisterController
