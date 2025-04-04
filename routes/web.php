@@ -18,5 +18,5 @@ Route::get('/register', [RegisterController::class, 'create'])->middleware("gues
 
 // SessionController
 Route::delete('/logout', [SessionController::class, 'destroy']);
-Route::get('/login', [SessionController::class, 'create'])->name("login");
+Route::get('/login', [SessionController::class, 'create'])->name("login")->middleware("guest");
 Route::post('/login', [SessionController::class, 'store']);
